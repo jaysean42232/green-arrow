@@ -1,0 +1,18 @@
+::加密
+@echo on
+
+::2.复制文件到此文件夹
+xcopy/y/c/h/e "%~dp0*.*" "F:\docjiami\"
+
+::3.添加文件名后缀
+cd/d F:\docjiami\
+ren *.* *.*.png
+
+::4.复制文件(旧文件删除？)不行，要用增量副本，复制没有用，目前就是手动比较好
+::xcopy/y/c/e "F:\docjiami\*.*" "F:\docjiemi\"
+
+::5.压缩文件
+
+::6.修改后缀
+ 
+pause
